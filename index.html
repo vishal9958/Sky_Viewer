@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkyView Weather</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar">
+      <div class="logo">🌤️ SkyViewer</div>
+      <div id="themeToggle" class="toggle-theme">🌙</div>
+    </nav>
+
+    <section class="search-section">
+      <input type="text" id="cityInput" placeholder="Search for a city..." />
+      <button id="searchBtn">🔍</button>
+    </section>
+
+    <section class="weather-card" id="weatherCard">
+      <h2 id="cityName">City Name</h2>
+      <p id="date">Date</p>
+      <p id="condition">Condition</p>
+
+      <div class="main-weather">
+        <div class="weather-icon" id="weatherIcon">⛅</div>
+        <div class="temp-details">
+          <h1 id="temperature">--°</h1>
+          <p class="feels-like">Feels like: <span id="feelsLike">--°</span></p>
+        </div>
+      </div>
+
+      <div class="info-cards">
+  <div class="info-box">
+    <h4>Humidity</h4>
+    <span>💧 <span id="humidity">--%</span></span>
+  </div>
+  <div class="info-box">
+    <h4>UV Index</h4>
+    <span>🔆 <span id="uv">--</span></span>
+  </div>
+  <div class="info-box">
+    <h4>Wind</h4>
+    <span>💨 <span id="wind">-- km/h</span></span>
+  </div>
+  <div class="info-box">
+    <h4>Pressure</h4>
+    <span>🌡️ <span id="pressure">-- hPa</span></span>
+  </div>
+</div>
+
+    </section>
+  </div>
+</body>
+
+</html>

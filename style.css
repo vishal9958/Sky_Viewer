@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0b0f19;
+  color: #fff;
+  padding: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding-bottom: 20px;
+}
+
+.logo {
+  font-size: 1.4rem;
+}
+
+.toggle-theme {
+  cursor: pointer;
+}
+
+.search-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.search-section input {
+  width: 50%;
+  padding: 14px 20px;
+  border-radius: 30px;
+  border: none;
+  font-size: 1rem;
+  background-color: #1b1f2e;
+  color: #fff;
+}
+
+.search-section button {
+  margin-left: 10px;
+  padding: 14px 20px;
+  border-radius: 30px;
+  border: none;
+  background-color: #2b324b;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.weather-card {
+  background-color: #131722;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+}
+
+#cityName {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+#date {
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+  color: #c7c7c7;
+}
+
+.weather-icon {
+  font-size: 3.5rem;
+  margin: 10px 0;
+}
+
+#temperature {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+#condition {
+  font-size: 1.1rem;
+  color: #bbb;
+  margin: 5px 0 15px;
+}
+
+.weather-card p {
+  font-size: 1rem;
+  margin: 6px 0;
+}
+
+/* Info Cards - humidity, wind, etc. */
+.info-cards {
+  display: flex;
+  justify-content: space-around;
+  margin: 25px 0;
+  flex-wrap: wrap;
+}
+
+.info-box {
+  background-color: #1e2230;
+  padding: 15px 25px;
+  border-radius: 12px;
+  text-align: center;
+  margin: 10px;
+  flex: 1 1 120px;
+}
+
+.info-box h4 {
+  font-size: 0.9rem;
+  color: #999;
+  margin-bottom: 6px;
+}
+
+.info-box span {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Toggle Light/Dark Mode Theme */
+body.dark-mode {
+  background-color: #f2f2f2;
+  color: #111;
+}
+
+body.dark-mode .weather-card {
+  background-color: #fff;
+  color: #111;
+}
+
+body.dark-mode .info-box,
+body.dark-mode .forecast-card {
+  background-color: #eaeaea;
+  color: #111;
+}
+
+body.dark-mode input,
+body.dark-mode button {
+  background-color: #ddd;
+  color: #111;
+}
+
+body.dark-mode .navbar .logo {
+  color: #000;
+}
+.main-weather {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.temp-details h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.feels-like {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+.main-weather {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.weather-icon {
+  font-size: 3.5rem;
+  margin: 0;
+}
+
+.temp-details {
+  text-align: right;
+}
+
+.temp-details h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.feels-like {
+  font-size: 0.95rem;
+  color: #ccc;
+  margin-top: 5px;
+}
+
+.info-box span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  font-size: 1rem;
+}
